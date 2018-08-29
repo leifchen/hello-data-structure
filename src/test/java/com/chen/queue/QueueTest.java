@@ -14,7 +14,7 @@ public class QueueTest {
 
     @Test
     public void test() {
-        int opCount = 200000;
+        int opCount = 100000;
 
         Queue<Integer> arrayQueue = new ArrayQueue<>();
         double time1 = testQueue(arrayQueue, opCount);
@@ -23,6 +23,10 @@ public class QueueTest {
         Queue<Integer> loopQueue = new LoopQueue<>();
         double time2 = testQueue(loopQueue, opCount);
         System.out.println("LoopQueue, time: " + time2 + " s");
+
+        Queue<Integer> linkedlistQueue = new LinkedListQueue<>();
+        double time3 = testQueue(linkedlistQueue, opCount);
+        System.out.println("LinkedListQueue, time: " + time3 + " s");
     }
 
     private static double testQueue(Queue<Integer> q, int opCount) {
