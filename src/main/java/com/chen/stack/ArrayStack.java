@@ -3,7 +3,7 @@ package com.chen.stack;
 import com.chen.array.Array;
 
 /**
- * 自定义栈的实现类
+ * 数组栈
  *
  * @Author LeifChen
  * @Date 2018-08-27

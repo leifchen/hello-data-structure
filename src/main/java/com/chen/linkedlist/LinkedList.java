@@ -1,7 +1,7 @@
 package com.chen.linkedlist;
 
 /**
- * LinkedList
+ * 自定义链表
  *
  * @Author LeifChen
  * @Date 2018-08-29

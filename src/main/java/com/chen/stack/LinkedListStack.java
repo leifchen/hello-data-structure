@@ -3,7 +3,7 @@ package com.chen.stack;
 import com.chen.linkedlist.LinkedList;
 
 /**
- * LinkedListStack
+ * 链表栈
  *
  * @Author LeifChen
  * @Date 2018-08-29
