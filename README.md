@@ -6,4 +6,4 @@
 
 参考视频：[《玩转数据结构 从入门到进阶》](https://coding.imooc.com/class/207.html)
 
-[目录](SUMMARY.md)
+[介绍文档](https://leifchen.github.io/hello-data-structure/)
