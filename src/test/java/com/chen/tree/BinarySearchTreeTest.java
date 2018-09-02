@@ -17,7 +17,7 @@ public class BinarySearchTreeTest {
 
     @Before
     public void init() {
-        int[] nums = {5, 3, 1, 2, 4, 9, 7, 6, 8, 10};
+        int[] nums = {5, 3, 1, 2, 4, 9, 7, 6, 8, 10, 8};
         for (int num : nums) {
             bst.add(num);
         }
