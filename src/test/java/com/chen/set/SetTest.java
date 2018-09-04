@@ -26,7 +26,7 @@ public class SetTest {
 
         Set<String> linkedListSet = new LinkedListSet<>();
         double time2 = testSet(linkedListSet, filename);
-        System.out.println("Binary-Search-Tree Set: " + time2 + " s");
+        System.out.println("LinkedList Set: " + time2 + " s");
     }
 
     private static double testSet(Set<String> set, String filename) {
