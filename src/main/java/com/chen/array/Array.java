@@ -40,6 +40,14 @@ public class Array<E> {
         this(10);
     }
 
+    public Array(E[] arr) {
+        data = (E[]) new Object[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            data[i] = arr[i];
+        }
+        size = arr.length;
+    }
+
     /**
      * 获取数组中的元素个数
      *
@@ -231,6 +239,22 @@ public class Array<E> {
         if (index != -1) {
             remove(index);
         }
+    }
+
+    /**
+     * 交换索引i和索引j对应的元素
+     *
+     * @param i
+     * @param j
+     */
+    public void swap(int i, int j) {
+        if (i < 0 || i >= size || j < 0 || j >= size) {
+            throw new IllegalArgumentException("Index is illegal.");
+        }
+
+        E tmp = data[i];
+        data[i] = data[j];
+        data[j] = tmp;
     }
 
     @Override
