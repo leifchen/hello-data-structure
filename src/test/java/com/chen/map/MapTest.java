@@ -27,6 +27,12 @@ public class MapTest {
         Map<String, Integer> linkedListMap = new LinkedListMap<>();
         double time2 = testSet(linkedListMap, filename);
         System.out.println("LinkedList Map: " + time2 + " s");
+
+        System.out.println();
+
+        Map<String, Integer> avlMap = new AVLMap<>();
+        double time3 = testSet(avlMap, filename);
+        System.out.println("AVL Map: " + time3 + " s");
     }
 
     private static double testSet(Map<String, Integer> map, String filename) {
