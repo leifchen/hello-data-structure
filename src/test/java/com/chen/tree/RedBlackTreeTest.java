@@ -1,5 +1,6 @@
 package com.chen.tree;
 
+import com.chen.hashtable.HashTable;
 import com.chen.map.BinarySearchTreeMap;
 import org.junit.Test;
 
@@ -17,7 +18,7 @@ public class RedBlackTreeTest {
 
     @Test
     public void test() {
-        int n = 2000000;
+        int n = 1000000;
 
         Random random = new Random();
         List<Integer> testData = new ArrayList<>();
@@ -63,5 +64,18 @@ public class RedBlackTreeTest {
 
         time = (endTime - startTIme) / 1000000000.0;
         System.out.println("RBT: " + time + " s");
+
+        // Test HashTable
+        startTIme = System.nanoTime();
+
+        HashTable<Integer, Integer> ht = new HashTable<>();
+        for (Integer x : testData) {
+            ht.add(x, null);
+        }
+
+        endTime = System.nanoTime();
+
+        time = (endTime - startTIme) / 1000000000.0;
+        System.out.println("HashTable: " + time + " s");
     }
 }
